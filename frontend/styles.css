@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b1b1b;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1b1b1b;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #5e5c5c;
+    font-size: 1.15rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    margin-left: 10px;  
+    font-size: 1.3rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.logoimg {
+    max-width: 50px;
+}
+
+.account-icon {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    height: 80vh;
+}
+
+.leftsection {
+    max-width: 50%;
+}
+
+.leftsection div {
+    font-size: 5rem;
+    margin: 10px 0;
+    font-family: "Londrina Outline", sans-serif;
+}
+
+.purple {
+    color: #6b6be4;
+}
+
+.btn {
+    padding: 12px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #161b22;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #6b6be4;
+    border-color: #6b6be4;
+}
+
+.rightsection {
+    text-align: center;
+}
+
+.scanner-gif {
+    cursor: pointer;
+    width: 300px; /* Adjust size as needed */
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #1b1b1b; /* Match background color */
+}
+
+.upload-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: white;
+}
+
+.date-time {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: gray;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #161b22;
+    padding: 20px;
+    text-align: center;
+    color: gray;
+}
+.account-details {
+    display: none;
+    position: absolute;
+    background-color: #161b22;
+    padding: 20px;
+    border: 2px solid #6b6be4;
+    border-radius: 6px;
+    top: 60px;
+    right: 20px;
+    text-align: left;
+}
+.account-details p {
+    margin: 5px 0;
+}
+#results {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #161b22;
+    border-radius: 6px;
+    color: white;
+}
+#annotated-image {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+.result-item {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity</title>
+    <link rel="stylesheet" href="stylesheet3.css">
+    <style>
+        body {
+            background-color: #1b1b1b;
+            font-family: "Montserrat", sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 50px;
+        }
+        .title {
+            font-size: 4rem;
+            margin: 20px 0;
+        }
+        .description {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        .input-group {
+            margin: 20px 0;
+        }
+        .input-group input {
+            padding: 10px;
+            font-size: 1rem;
+        }
+        .btn {
+            padding: 12px;
+            font-family: "Montserrat", sans-serif;
+            background-color: #161b22;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #6b6be4;
+            border-color: #6b6be4;
+        }
+        .back-btn {
+            padding: 12px;
+            font-family: "Montserrat", sans-serif;
+            background-color: #161b22;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .back-btn:hover {
+            background-color: #6b6be4;
+            border-color: #6b6be4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Electricity</div>
+        <div class="description">
+            Input your electricity bill below:<br>
+            By applying solar panels, your electricity cost can be reduced by 80%.
+        </div>
+        <div class="input-group">
+            <input type="number" id="electricity-bill" placeholder="Enter electricity bill">
+            <button class="btn" onclick="calculateSavings()">Calculate Savings</button>
+        </div>
+        <div id="result"></div>
+        <a href="index.html" class="back-btn">Back</a>
+    </div>
+
+    <script>
+        function calculateSavings() {
+            const bill = document.getElementById('electricity-bill').value;
+            const savings = bill * 0.8;
+            document.getElementById('result').innerText = `Savings: ₹${savings.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
